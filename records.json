@@ -1,0 +1,73 @@
+[
+  {
+    "artist": "The 5th Dimension",
+    "album": "Portrait",
+    "played": false,
+    "copies": [
+      {
+        "thumbUrl": "https://img.discogs.com/UlbXdphfqFgvp-XEI-w8QevULJ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12938394-1544923575-1843.jpeg.jpg",
+        "catalogueNo": "Bell 6045",
+        "location": "shelf",
+        "needNewJacket": true,
+        "needInnerSleeve": true,
+        "condition": {
+          "sleeve": {
+            "rating": "poor",
+            "notes": "bad condition, missing one half of jacket"
+          },
+          "media": {
+            "rating": "poor",
+            "notes": "very scratched"
+          }
+        },
+        "purchasedByMe": false,
+        "purchaseDate": "2020-03-10"
+      },
+      {
+        "thumbUrl": "https://img.discogs.com/UlbXdphfqFgvp-XEI-w8QevULJ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12938394-1544923575-1843.jpeg.jpg",
+        "catalogueNo": null,
+        "location": "shelf",
+        "needNewJacket": true,
+        "needInnerSleeve": true,
+        "condition": {
+          "sleeve": {
+            "rating": "good",
+            "notes": "good condition, some bottom damage, slight seam ripping on top, missing inner sleeve"
+          },
+          "media": {
+            "rating": "poor",
+            "notes": "scratched"
+          }
+        },
+        "purchasedByMe": false,
+        "purchaseDate": "2019-10-07"
+      }
+    ]
+  },
+  {
+    "artist": "Santana",
+    "album": "Abraxas",
+    "played": true,
+    "copies": [
+      {
+        "thumbUrl": "https://img.discogs.com/3RkO2be2HGX6oMfJN3CWyDM94-Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3703908-1460214579-5246.jpeg.jpg",
+        "catalogueNo": "PC 30130",
+        "location": "shelf",
+        "needNewJacket": false,
+        "needInnerSleeve": false,
+        "condition": {
+          "sleeve": {
+            "rating": "VG+",
+            "notes": "jacket splitting, inner sleeve is great"
+          },
+          "media": {
+            "rating": "VG+",
+            "notes": "very clean, almost mint looking"
+          }
+        },
+        "purchasedByMe": false,
+        "purchaseDate": "2020-01-15"
+      }
+    ]
+  }
+]

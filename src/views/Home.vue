@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Album :record="firstRecord" />
   </div>
 </template>
 
-<script>
+<script lang="ts">
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { Component, Vue } from "vue-property-decorator";
+import Album from "@/components/Album.vue";
+import records from "../../records.json";
 
-export default {
-  name: "Home",
+@Component({
   components: {
-    HelloWorld
+    Album
   }
-};
+})
+export default class Home extends Vue {
+  private get firstRecord() {
+    return records[0];
+  }
+}
 </script>
