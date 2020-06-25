@@ -38,11 +38,11 @@
         "needInnerSleeve": null,
         "condition": {
           "sleeve": {
-            "rating": null,
+            "rating": "G",
             "notes": null
           },
           "media": {
-            "rating": null,
+            "rating": "VG",
             "notes": "fairly scratched"
           }
         },
