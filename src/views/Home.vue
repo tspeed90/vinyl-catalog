@@ -1,23 +1,25 @@
 <template>
   <div class="home">
-    <Album :record="firstRecord" />
+    <AlbumsList :records="records" />
   </div>
 </template>
 
 <script lang="ts">
 // @ is an alias to /src
 import { Component, Vue } from "vue-property-decorator";
-import Album from "@/components/Album.vue";
+import AlbumsList from "@/components/AlbumsList.vue";
 import records from "../../utils/albums.json";
 
 @Component({
   components: {
-    Album
+    AlbumsList
   }
 })
 export default class Home extends Vue {
-  private get firstRecord() {
-    return records[0];
+  currentIndex = 0;
+
+  private get records() {
+    return records;
   }
 }
 </script>

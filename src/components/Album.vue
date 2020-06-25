@@ -8,18 +8,13 @@
         class="album-art"
         :alt="record.album + ' by ' + record.artist"
       />
-      <img
-        v-else
-        src="../assets/generic_cover.png"
-        class="album-art"
-        :alt="record.album + ' by ' + record.artist"
-      />
+      <img v-else src="../assets/generic_cover.png" class="album-art" alt="generic album cover" />
       <div class="yellow-square"></div>
     </div>
     <ul class="album-details">
       <li>{{ record.artist }}</li>
       <li>Release: {{ record.copies[0].catalogueNo }}</li>
-      <li>{{ record.copies[0].played == true ? "Played" : "Unplayed" }}</li>
+      <li>{{ record.played == "TRUE" ? "Played" : "Unplayed" }}</li>
     </ul>
     <table class="album-condition-details">
       <thead>
@@ -56,11 +51,15 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 @Component
 export default class Album extends Vue {
   @Prop() private record!: object;
+  @Prop() private records!: Array<{}>;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+h1 {
+  text-transform: lowercase;
+}
 h3 {
   margin: 40px 0 0;
 }
