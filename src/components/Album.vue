@@ -3,8 +3,15 @@
     <h1>{{ record.album }}</h1>
     <div class="album-art-container">
       <img
+        v-if="record.copies[0].hasOwnProperty('art')"
+        :src="record.copies[0].art"
         class="album-art"
-        :src="record.copies[0].thumbUrl"
+        :alt="record.album + ' by ' + record.artist"
+      />
+      <img
+        v-else
+        src="../assets/generic_cover.png"
+        class="album-art"
         :alt="record.album + ' by ' + record.artist"
       />
       <div class="yellow-square"></div>
