@@ -8,7 +8,7 @@
 // @ is an alias to /src
 import { Component, Vue } from "vue-property-decorator";
 import Album from "@/components/Album.vue";
-import records from "../../records.json";
+import records from "../../utils/albums.json";
 
 @Component({
   components: {

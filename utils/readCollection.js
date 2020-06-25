@@ -1,7 +1,8 @@
 const fs = require("fs");
 const parse = require("csv-parse/lib/sync");
+const fetch = require("node-fetch");
 
-fs.readFile("./vinyl_collection.csv", "UTF-8", (err, data) => {
+fs.readFile("./testCollection.csv", "UTF-8", (err, data) => {
   if (err) {
     throw err;
   } else {
@@ -24,19 +25,34 @@ function emptyToFalse(column) {
 }
 
 // generates JSON from read CSV file using csv-parse library
-function convertToJson(collection) {
+async function convertToJson(collection) {
   const rows = parse(collection, {
     columns: true
   });
 
-  const updatedRows = rows.map(row => {
+  async function requestDiscogsInfo(row) {
+    let discogsAlbum;
+    if (row.catalogueNo !== "") {
+      const discogsResults = await fetch(
+        `https://api.discogs.com/database/search?catno=${row.catalogueNo}&key=PLEnZqSdtLmdphzMJZzO&secret=FgpWuGTjmNrhIrqNOnhBDEWMZYVmfOwz`
+      );
+      console.log(discogsResults.headers);
+      discogsAlbum = (await discogsResults.json()).results[0];
+    } else {
+      discogsAlbum = {};
+    }
+    return discogsAlbum;
+  }
+  const updatedRowsPromise = rows.map(async row => {
+    const discogsAlbum = await requestDiscogsInfo(row);
     return {
       artist: emptyToNull(row.artist),
       album: emptyToNull(row.album),
       played: emptyToFalse(row.played),
       copies: [
         {
-          thumbUrl: null, //will be updated by discogs script
+          art: discogsAlbum.cover_image,
+          year: discogsAlbum.year,
           catalogueNo: emptyToNull(row.catalogueNo),
           location: emptyToNull(row.location),
           needNewJacket: emptyToNull(row.needNewCase),
@@ -57,6 +73,8 @@ function convertToJson(collection) {
       ]
     };
   });
+
+  const updatedRows = await Promise.all(updatedRowsPromise);
 
   const albums = JSON.stringify(updatedRows);
   fs.writeFileSync("albums.json", albums);
