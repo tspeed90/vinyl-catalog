@@ -1,6 +1,6 @@
 <template>
   <div class="album-details-container">
-    <Album :record="firstRecord" />
+    <Album :record="displayRecord" />
   </div>
 </template>
 
@@ -16,9 +16,9 @@ import records from "../../utils/albums.json";
   }
 })
 export default class AlbumDetails extends Vue {
-  private get firstRecord() {
+  private get displayRecord() {
     if (this.$route.params.id) {
-      return records[this.$route.params.id];
+      return records.find(record => record.id == this.$route.params.id);
     } else {
       return records[0];
     }

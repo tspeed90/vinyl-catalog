@@ -23,3 +23,5 @@ export default class Home extends Vue {
   }
 }
 </script>
+
+<style lang="scss"></style>

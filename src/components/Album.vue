@@ -1,6 +1,6 @@
 <template>
   <div class="album-wrapper">
-    <h1>{{ record.album }}</h1>
+    <h1 class="album-heading">{{ record.album }}</h1>
     <div class="album-art-container">
       <img
         v-if="record.copies[0].hasOwnProperty('art')"
@@ -12,7 +12,7 @@
       <div class="yellow-square"></div>
     </div>
     <ul class="album-details">
-      <li>{{ record.artist }}</li>
+      <li class="artist-name">{{ record.artist }}</li>
       <li>Release: {{ record.copies[0].catalogueNo }}</li>
       <li>{{ record.played == "TRUE" ? "Played" : "Unplayed" }}</li>
     </ul>
@@ -57,8 +57,11 @@ export default class Album extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h1 {
+.album-heading {
   text-transform: lowercase;
+  width: 50%;
+  font-size: 24px;
+  margin: 0 auto 15px auto;
 }
 h3 {
   margin: 40px 0 0;
@@ -85,8 +88,8 @@ td:first-of-type {
   height: 200px;
   width: 200px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
 }
 
 .album-art-container {
@@ -96,12 +99,24 @@ td:first-of-type {
   position: relative;
 }
 .yellow-square {
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   background-color: #e8d84a;
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: -1;
+}
+
+.artist-name {
+  font-size: 20px;
+  text-transform: lowercase;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 800px) {
+  .album-heading {
+    width: 30%;
+  }
 }
 </style>
