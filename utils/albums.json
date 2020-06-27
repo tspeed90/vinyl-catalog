@@ -1,5 +1,6 @@
 [
   {
+    "id": "32470988",
     "artist": ".38 SPECIAL",
     "album": "SPECIAL FORCES",
     "played": false,
@@ -25,12 +26,13 @@
     ]
   },
   {
+    "id": "442569151",
     "artist": "5TH DIMENSION, THE",
     "album": "PORTRAIT",
     "played": "TRUE",
     "copies": [
       {
-        "art": "https://img.discogs.com/98f8ecc6d4e8e196ffd0b573ef6eda8fb68c59af/images/spacer.gif",
+        "art": "https://img.discogs.com/fc170cb2210b96a1de1f36aa3662c17bd88e6986/images/spacer.gif",
         "year": "1970",
         "catalogueNo": "BELL 6045",
         "location": "shelf",
@@ -38,11 +40,11 @@
         "needInnerSleeve": null,
         "condition": {
           "sleeve": {
-            "rating": "G",
+            "rating": null,
             "notes": null
           },
           "media": {
-            "rating": "VG",
+            "rating": null,
             "notes": "fairly scratched"
           }
         },
@@ -52,6 +54,7 @@
     ]
   },
   {
+    "id": "801165985",
     "artist": "5TH DIMENSION, THE",
     "album": "STONED SOUL PICNIC",
     "played": "TRUE",
@@ -77,6 +80,7 @@
     ]
   },
   {
+    "id": "567724743",
     "artist": "5TH DIMENSION, THE",
     "album": "INDIVIDUALLY & COLLECTIVELY",
     "played": "TRUE",
@@ -102,6 +106,7 @@
     ]
   },
   {
+    "id": "923767171",
     "artist": "5TH DIMENSION, THE",
     "album": "LOVE'S LINES, ANGLES & RHYMES",
     "played": "TRUE",
@@ -127,6 +132,7 @@
     ]
   },
   {
+    "id": "501391051",
     "artist": "A-HA",
     "album": "HUNTING HIGH AND LOW",
     "played": false,
@@ -154,6 +160,7 @@
     ]
   },
   {
+    "id": "220081067",
     "artist": "A-HA",
     "album": "HUNTING HIGH AND LOW",
     "played": false,
@@ -181,6 +188,7 @@
     ]
   },
   {
+    "id": "452731725",
     "artist": "AC/DC",
     "album": "HIGHWAY TO HELL",
     "played": false,
@@ -207,6 +215,7 @@
     ]
   },
   {
+    "id": "546177383",
     "artist": "AC/DC",
     "album": "LET THERE BE ROCK",
     "played": false,
@@ -232,6 +241,7 @@
     ]
   },
   {
+    "id": "418636447",
     "artist": "AC/DC",
     "album": "FOR THOSE ABOUT TO ROCK",
     "played": false,
@@ -257,6 +267,7 @@
     ]
   },
   {
+    "id": "640713604",
     "artist": "AC/DC",
     "album": "IF YOU WANT BLOOD",
     "played": false,
@@ -282,6 +293,7 @@
     ]
   },
   {
+    "id": "332486462",
     "artist": "AC/DC",
     "album": "DIRTY DEEDS DONE DIRT CHEAP",
     "played": false,
@@ -307,6 +319,7 @@
     ]
   },
   {
+    "id": "179177625",
     "artist": "AC/DC",
     "album": "BACK IN BLACK",
     "played": false,
@@ -332,6 +345,7 @@
     ]
   },
   {
+    "id": "474060278",
     "artist": "AEROSMITH",
     "album": "LIVE",
     "played": false,
@@ -359,6 +373,7 @@
     ]
   },
   {
+    "id": "965829796",
     "artist": "AEROSMITH",
     "album": "\"ROCKS\"",
     "played": false,
@@ -384,6 +399,7 @@
     ]
   },
   {
+    "id": "995213763",
     "artist": "AL KOOPER",
     "album": "I STAND ALONE",
     "played": false,
@@ -409,6 +425,7 @@
     ]
   },
   {
+    "id": "777339912",
     "artist": "AL KOOPER AND MIKE BLOOMFIELD",
     "album": "THE LIVE ADVENTURES OF",
     "played": false,
@@ -434,6 +451,7 @@
     ]
   },
   {
+    "id": "389596153",
     "artist": "AL STEWART",
     "album": "TIME PASSAGES",
     "played": "TRUE",
@@ -460,12 +478,13 @@
     ]
   },
   {
+    "id": "597759193",
     "artist": "AL STEWART",
     "album": "YEAR OF THE CAT",
     "played": false,
     "copies": [
       {
-        "art": "https://img.dthumbUrliscogs.com/LdTqMAf_Q7RbGXbikZxTuejVGww=/fit-in/600x611/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1074523-1395609003-4420.jpeg.jpg",
+        "art": "https://img.discogs.com/WQ_x-1_iBDKV9d6R9TWMgyG-SH8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12570557-1537818338-6817.jpeg.jpg",
         "year": "1976",
         "catalogueNo": "JXS-7022",
         "location": "shelf",
@@ -487,6 +506,7 @@
     ]
   },
   {
+    "id": "847397580",
     "artist": "ALABAMA",
     "album": "FEELS SO RIGHT",
     "played": false,
@@ -514,6 +534,7 @@
     ]
   },
   {
+    "id": "531776271",
     "artist": "ALAN PARSONS PROJECT, THE",
     "album": "TALES OF MYSTERY AND IMAGINATION",
     "played": false,
@@ -539,6 +560,7 @@
     ]
   },
   {
+    "id": "179070871",
     "artist": "ALFRED NEWMAN & KEN DARBY",
     "album": "PORTS OF PARADISE",
     "played": false,
@@ -566,6 +588,7 @@
     ]
   },
   {
+    "id": "317970052",
     "artist": "ALICE COOPER",
     "album": "KILLER",
     "played": false,
@@ -591,6 +614,7 @@
     ]
   },
   {
+    "id": "253685665",
     "artist": "ALIVE IN ALASKA",
     "album": "LOVE'S WAY",
     "played": false,
@@ -616,6 +640,7 @@
     ]
   },
   {
+    "id": "98236326",
     "artist": "ALLMAN BROTHERS BAND, THE",
     "album": "EAT A PEACH",
     "played": false,
@@ -641,6 +666,7 @@
     ]
   },
   {
+    "id": "42904984",
     "artist": "AMERICA",
     "album": "HARBOR",
     "played": false,
@@ -668,6 +694,7 @@
     ]
   },
   {
+    "id": "513642174",
     "artist": "AMERICA",
     "album": "HEARTS",
     "played": false,
@@ -693,6 +720,7 @@
     ]
   },
   {
+    "id": "824153576",
     "artist": "AMERICA",
     "album": "HEARTS",
     "played": false,
@@ -718,6 +746,7 @@
     ]
   },
   {
+    "id": "487107059",
     "artist": "AMERICA",
     "album": "AMERICA'S GREATEST HITS",
     "played": false,
@@ -743,6 +772,7 @@
     ]
   },
   {
+    "id": "868841669",
     "artist": "ANDY GRIFFITH",
     "album": "JUST FOR THE LAUGHS",
     "played": false,
@@ -770,6 +800,7 @@
     ]
   },
   {
+    "id": "451391527",
     "artist": "ARETHA FRANKLIN",
     "album": "THE BEST OF ARETHA FRANKLIN",
     "played": false,
@@ -797,6 +828,7 @@
     ]
   },
   {
+    "id": "272587885",
     "artist": "ASSOCIATION, THE",
     "album": "INSIGHT OUT",
     "played": "TRUE",
@@ -822,6 +854,7 @@
     ]
   },
   {
+    "id": "898378960",
     "artist": "ATLANTA RHYTHM SECTION",
     "album": "QUINELLA",
     "played": false,
@@ -849,6 +882,7 @@
     ]
   },
   {
+    "id": "330869725",
     "artist": "ATLANTA RHYTHM SECTION",
     "album": "CHAMPAGNE JAM",
     "played": false,
@@ -874,6 +908,7 @@
     ]
   },
   {
+    "id": "26071496",
     "artist": "ATOMIC ROOSTER",
     "album": "IN HEARING OF",
     "played": false,
@@ -900,6 +935,7 @@
     ]
   },
   {
+    "id": "673335878",
     "artist": "AUM",
     "album": "RESURRECTION",
     "played": false,
@@ -925,6 +961,7 @@
     ]
   },
   {
+    "id": "52712670",
     "artist": "AVERAGE WHITE BAND",
     "album": "SOUL SEARCHING",
     "played": false,

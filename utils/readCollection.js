@@ -17,11 +17,16 @@ function emptyToNull(column) {
   return column;
 }
 
+// change to convertToBoolean function that changes "TRUE" => true and "FALSE"  => false plus current functionality
 function emptyToFalse(column) {
   if (column == "") {
     return false;
   }
   return column;
+}
+
+function generateRecordId() {
+  return Math.floor(Math.random() * Math.floor(1000000000));
 }
 
 // generates JSON from read CSV file using csv-parse library
@@ -46,6 +51,7 @@ async function convertToJson(collection) {
   const updatedRowsPromise = rows.map(async row => {
     const discogsAlbum = await requestDiscogsInfo(row);
     return {
+      id: `${generateRecordId()}`,
       artist: emptyToNull(row.artist),
       album: emptyToNull(row.album),
       played: emptyToFalse(row.played),
