@@ -33,6 +33,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { Album } from "../records";
+
 @Component
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
