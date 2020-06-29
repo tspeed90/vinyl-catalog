@@ -65,6 +65,7 @@ export default class Album extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
 .album-heading {
   text-transform: lowercase;
   width: 50%;
@@ -124,7 +125,7 @@ td:first-of-type {
 .yellow-square {
   height: 190px;
   width: 190px;
-  background-color: #e8d84a;
+  background-color: $theme-color;
   position: absolute;
   top: 0px;
   right: 0px;

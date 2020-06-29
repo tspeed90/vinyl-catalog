@@ -33,7 +33,6 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { Album } from "../records";
-
 @Component
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
@@ -54,6 +53,8 @@ export default class AlbumsList extends Vue {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
+
 .collection-heading {
   width: 60%;
   margin: 0 auto;
@@ -66,7 +67,7 @@ export default class AlbumsList extends Vue {
   width: 100%;
   display: block;
   margin: 0 auto;
-  border-bottom: 10px solid #e8d84a;
+  border-bottom: 10px solid $theme-color;
 }
 
 @media screen and (min-width: 800px) {
@@ -83,7 +84,7 @@ h2 {
   margin: 0 auto;
   text-align: left;
   margin-bottom: 10px;
-  border-bottom: #e8d84a 4px solid;
+  border-bottom: $theme-color 4px solid;
   text-transform: lowercase;
 }
 ul {
