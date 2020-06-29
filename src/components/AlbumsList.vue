@@ -1,5 +1,9 @@
 <template>
   <div>
+    <router-link :to="{ name: 'Album Details', params: { id: randomAlbum.id } }" class="roulette-icon" aria-label="play album roulette">
+      <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" />
+      <p class="roulette-text">Roulette!</p>
+    </router-link>
     <h1 class="collection-heading">all albums</h1>
     <div
       v-for="(discography, artist) in recordsByArtist"
@@ -33,10 +37,19 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { Album } from "../records";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faRecordVinyl);
 
 @Component
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
+  
+  get randomAlbum() {
+   const index = Math.floor(Math.random() * Math.floor(this.records.length - 1));
+   return this.records[index];
+  }
 
   get recordsByArtist() {
     const artistsSorted: { [key: string]: Album[] } = {};
@@ -55,6 +68,23 @@ export default class AlbumsList extends Vue {
 
 <style scoped lang="scss">
 @import "../assets/scss/_variables.scss";
+.roulette-icon {
+  width: 5%;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.record-icon {
+  font-size: 40px;
+}
+
+.roulette-text {
+  padding: 0;
+  margin: 5px 0;
+}
 
 .collection-heading {
   width: 60%;

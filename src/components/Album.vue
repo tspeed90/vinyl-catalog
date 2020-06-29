@@ -1,9 +1,5 @@
 <template>
   <div class="album-wrapper">
-    <div class="roulette-icon">
-      <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" />
-      <p class="roulette-text">Roulette!</p>
-    </div>
     <h1 class="album-heading">{{ record.album }}</h1>
     <div class="album-art-container">
       <img
@@ -51,10 +47,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faRecordVinyl);
 
 @Component
 export default class Album extends Vue {
@@ -91,21 +83,6 @@ table {
 
 td:first-of-type {
   border-right: 1px solid #333;
-}
-
-.roulette-icon {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
-.record-icon {
-  font-size: 40px;
-}
-
-.roulette-text {
-  padding: 0;
-  margin: 5px 0;
 }
 
 .album-art {
