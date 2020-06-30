@@ -22,7 +22,12 @@ const routes: Array<RouteConfig> = [
     path: "/collections",
     name: "Collections",
     component: () => import(/* webpackChunkName: "collections" */ "../views/Collections.vue") 
-  }  
+  },
+  {
+    path: "/collections/:collection",
+    name: "Collections List",
+    component: () => import(/* webpackChunkName: "collectionsList" */ "../views/Collections.vue") 
+  }
 ];
 
 const router = new VueRouter({

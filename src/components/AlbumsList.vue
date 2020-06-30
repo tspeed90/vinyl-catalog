@@ -4,7 +4,7 @@
       <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" />
       <p class="roulette-text">Roulette!</p>
     </router-link>
-    <h1 class="collection-heading">all albums</h1>
+    <h1 class="collection-heading">{{heading}}</h1>
     <div
       v-for="(discography, artist) in recordsByArtist"
       v-bind:key="artist"
@@ -45,7 +45,8 @@ library.add(faRecordVinyl);
 @Component
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
-  
+  @Prop() private heading!: String;
+    
   get randomAlbum() {
    const index = Math.floor(Math.random() * Math.floor(this.records.length - 1));
    return this.records[index];
@@ -90,6 +91,7 @@ export default class AlbumsList extends Vue {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 40px;
+  margin-top: 40px;
   border-bottom: 2px solid #333;
   position: relative;
 }
