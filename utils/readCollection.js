@@ -49,12 +49,46 @@ function selectBestDiscogsMatch(discogsResults, csvCat) {
   );
 }
 
+// TODO: rewrite to avoid global variable :(
+const collectionTitles = [];
+function addCollectionTitles(collectionTag) {
+  if (!collectionTitles.includes(collectionTag)) {
+    collectionTitles.push(collectionTag);
+  }
+}
+
+function addCollectionTags(played, discogsAlbum) {
+  let collectionTags = [];
+  addToUnplayedCollection(played, collectionTags);
+  addToDecadesCollection(discogsAlbum, collectionTags);
+  return collectionTags;
+}
+
+function addToUnplayedCollection(played, collectionTags) {
+  if (played == false) {
+    const unplayedTag = 'unplayed';
+    collectionTags.push(unplayedTag);
+    addCollectionTitles(unplayedTag);
+  }
+}
+
+function addToDecadesCollection(discogsResult, collectionTags) {
+  let year;
+  if (discogsResult.year !== null && discogsResult.year !== undefined) {
+    year = parseInt((discogsResult.year).substr(0, 3), 10);
+    yearTag = `${year}0s`; 
+    collectionTags.push(yearTag);
+    addCollectionTitles(yearTag); 
+  }
+}
+
 // generates JSON from read CSV file using csv-parse library
 async function convertToJson(collection) {
   const rows = parse(collection, {
     columns: true
   });
 
+  // TODO: move this function out of convertToJson and call here
   async function requestDiscogsInfo(row) {
     let discogsAlbum;
     if (row.catalogueNo !== "") {
@@ -78,6 +112,7 @@ async function convertToJson(collection) {
       artist: emptyToNull(row.artist),
       album: emptyToNull(row.album),
       played: convertToBoolean(row.played),
+      collections: addCollectionTags(convertToBoolean(row.played), discogsAlbum),
       copies: [
         {
           art: discogsAlbum.cover_image,
@@ -105,6 +140,10 @@ async function convertToJson(collection) {
 
   const updatedRows = await Promise.all(updatedRowsPromise);
 
-  const albums = JSON.stringify(updatedRows);
-  fs.writeFileSync("albums.json", albums);
+  
+  const albums =  {
+    collectionTitles: collectionTitles,
+    albums: updatedRows
+  }
+  fs.writeFileSync("albums.json", JSON.stringify(albums));
 }
