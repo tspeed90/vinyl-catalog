@@ -1,8 +1,8 @@
 <template>
   <div>
-    <router-link :to="{ name: 'Album Details', params: { id: randomAlbum.id } }" class="roulette-icon" aria-label="play album roulette">
-      <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" />
+    <router-link :to="{ name: 'Album Details', params: { id: randomAlbum.id } }" class="roulette-icon">
       <p class="roulette-text">Roulette!</p>
+      <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" title="select a random album from this collection" />
     </router-link>
     <h1 class="collection-heading">{{heading}}</h1>
     <div
@@ -46,7 +46,7 @@ library.add(faRecordVinyl);
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
   @Prop() private heading!: String;
-    
+
   get randomAlbum() {
    const index = Math.floor(Math.random() * Math.floor(this.records.length - 1));
    return this.records[index];
@@ -79,16 +79,18 @@ export default class AlbumsList extends Vue {
 }
 
 .record-icon {
-  font-size: 40px;
+  font-size: 60px;
+  color: #444;
+  margin: 5px 0;
 }
 
 .roulette-text {
   padding: 0;
-  margin: 5px 0;
+  margin: 0;
 }
 
 .collection-heading {
-  width: 60%;
+  width: 250px;
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -105,7 +107,7 @@ export default class AlbumsList extends Vue {
 
 @media screen and (min-width: 800px) {
   .collection-heading {
-    width: 20%;
+    width: 30%;
   }
 }
 .albums-list-container {
