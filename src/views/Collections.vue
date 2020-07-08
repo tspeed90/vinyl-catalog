@@ -8,7 +8,14 @@
 import {Component, Prop, Vue} from 'vue-property-decorator';
 import AlbumsList from '@/components/AlbumsList.vue';
 import CollectionsList from '@/components/CollectionsList.vue';
-import catalogData from '../../utils/albums.json';
+import firebase from "firebase/app";
+import 'firebase/database';
+const database = firebase.database();
+
+let catalogData = Vue.observable({
+  collectionTitles: [],
+  albums:[]
+})
 
 @Component({
   components:{
@@ -18,6 +25,13 @@ import catalogData from '../../utils/albums.json';
 })
 
 export default class Collections extends Vue {
+  created () {
+    database.ref('/').once('value').then(function(snapshot) {
+      catalogData.collectionTitles = snapshot.val().collectionTitles;
+      catalogData.albums = snapshot.val().albums;
+    });
+  }
+
   get catalogData() {
     return catalogData;
   }
@@ -25,6 +39,7 @@ export default class Collections extends Vue {
   private get records() {
     if(this.$route.params.collection) {
       return catalogData.albums.filter(album => {
+        if (album.collections !== undefined)
         return album.collections.includes(this.$route.params.collection)
       })
     } else {

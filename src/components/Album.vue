@@ -1,5 +1,5 @@
 <template>
-  <div class="album-wrapper">
+  <div class="album-wrapper"  v-if="record !== undefined">
     <h1 class="album-heading">{{ record.album }}</h1>
     <div class="album-art-container">
       <img
@@ -16,43 +16,27 @@
       <li>Release: {{ record.copies[0].catalogueNo }}</li>
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
     </ul>
-    <table class="album-condition-details">
-      <thead>
-        <tr>
-          <th colspan="2">Sleeve Condition</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Rating</td>
-          <td>{{ record.copies[0].condition.sleeve.rating }}</td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="album-condition-details">
-      <thead>
-        <tr>
-          <th colspan="2">Media Condition</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Rating</td>
-          <td>{{ record.copies[0].condition.media.rating }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <span class="thumb-rating-container">
+      <button class="thumbs-button"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
+      <button class="thumbs-button"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
+    </span>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faThumbsUp);
+library.add(faThumbsDown);
 
 @Component
 export default class Album extends Vue {
   @Prop() private record!: object;
   @Prop() private records!: Array<{}>;
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -115,6 +99,22 @@ td:first-of-type {
   font-weight: bolder;
 }
 
+.thumbs-button {
+  background-color: #fafafa;
+  border: 2px solid $theme-color;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.thumbs-icon {
+  font-size: 26px;
+  color: #444;
+}
+
+.thumbs-separator {
+  font-size: 36px;
+}
 @media screen and (min-width: 800px) {
   .album-heading {
     width: 30%;
