@@ -14,7 +14,7 @@ const database = firebase.database();
 
 let catalogData = Vue.observable({
   collectionTitles: [],
-  albums:[]
+  albums: {}
 })
 
 @Component({
@@ -37,13 +37,14 @@ export default class Collections extends Vue {
   }
 
   private get records() {
+    const albums = Object.values(catalogData.albums);
     if(this.$route.params.collection) {
-      return catalogData.albums.filter(album => {
+      return albums.filter(album => {
         if (album.collections !== undefined)
         return album.collections.includes(this.$route.params.collection)
       })
     } else {
-      return catalogData.albums;
+      return albums;
     }
   }  
   private get collectionHeading() {

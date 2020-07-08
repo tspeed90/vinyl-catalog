@@ -28,7 +28,7 @@ function convertToBoolean(column) {
 }
 
 function generateRecordId() {
-  return Math.floor(Math.random() * Math.floor(1000000000));
+  return Math.floor(Math.random() * Math.floor(1000000000)) + "";
 }
 
 function normalizeCatalogueNumber(catNo) {
@@ -108,7 +108,7 @@ async function convertToJson(collection) {
   const updatedRowsPromise = rows.map(async row => {
     const discogsAlbum = await requestDiscogsInfo(row);
     return {
-      id: `${generateRecordId()}`,
+      id: generateRecordId(),
       artist: emptyToNull(row.artist),
       album: emptyToNull(row.album),
       played: convertToBoolean(row.played),
@@ -140,10 +140,14 @@ async function convertToJson(collection) {
 
   const updatedRows = await Promise.all(updatedRowsPromise);
 
-  
-  const albums =  {
+  let albums = {};
+  updatedRows.forEach(row => {
+    albums[row.id] = row 
+  })
+
+  const catalogData =  {
     collectionTitles: collectionTitles,
-    albums: updatedRows
+    albums: albums
   }
-  fs.writeFileSync("albums.json", JSON.stringify(albums));
+  fs.writeFileSync("albums.json", JSON.stringify(catalogData));
 }
