@@ -17,8 +17,8 @@
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
     </ul>
     <span class="thumb-rating-container">
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="updateAlbumCollections('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="updateAlbumCollections('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
     </span>
   </div>
 </template>
@@ -40,26 +40,43 @@ export default class Album extends Vue {
   @Prop() private records!: Array<{}>;
 
   private get hasThumbsUp() {
-    if (this.record.collections.includes('thumbs-up')) {
-      return true;
-    }
+    return this.record.collections && this.record.collections.includes('thumbs-up');
   }
 
   private get hasThumbsDown() {
-    if (this.record.collections.includes('thumbs-down')) {
-      return true;
+    return this.record.collections && this.record.collections.includes('thumbs-down');
+  }
+
+  onThumbsUp(title) {
+    if (this.hasThumbsUp) {
+      this.removeCollectionFromRecord(title);
+    } else {
+      this.addCollectionToRecord(title);
+    }
+  } 
+
+  onThumbsDown(title) {
+    if (this.hasThumbsDown) {
+      this.removeCollectionFromRecord(title);
+    } else {
+      this.addCollectionToRecord(title);
     }
   }
 
-  updateAlbumCollections(title) {
+  addCollectionToRecord(title) {
     let updates = this.record.collections || [];
-      console.log(!updates.includes(title)); 
     if (!updates.includes(title)) {
       updates.push(title);
       database.ref('/albums/' + this.$route.params.id + '/collections').set(updates);
       this.updateCollectionTitles(title);
     }
-  } 
+  }
+
+  removeCollectionFromRecord(title) {
+    let updates = [...this.record.collections];
+    updates.splice(this.record.collections.indexOf('title'), 1);
+    database.ref('/albums/' + this.$route.params.id + '/collections').set(updates);
+  }
 
   updateCollectionTitles(title) {
     database.ref('/collectionTitles').once('value').then(function(snapshot) {
