@@ -38,11 +38,13 @@ export default class Collections extends Vue {
   }
 
   private get records() {
-    const albums = Object.values(catalogData.albums);
+    let albums = Object.values(catalogData.albums);
+    albums.sort((a,b) => a.artist > b.artist ? 1 : -1);
     if(this.$route.params.collection) {
       return albums.filter(album => {
-        if (album.collections !== undefined)
-        return album.collections.includes(this.$route.params.collection)
+        if (album.collections !== undefined) {
+          return album.collections.includes(this.$route.params.collection);
+        } 
       })
     } else {
       return albums;
