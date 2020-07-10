@@ -38,6 +38,7 @@ export default class Collections extends Vue {
 
   private get records() {
     const albums = Object.values(catalogData.albums);
+    console.log(albums);
     if(this.$route.params.collection) {
       return albums.filter(album => {
         if (album.collections !== undefined)

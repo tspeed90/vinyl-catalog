@@ -17,8 +17,8 @@
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
     </ul>
     <span class="thumb-rating-container">
-      <button class="thumbs-button"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
-      <button class="thumbs-button"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="updateAlbumCollections('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="updateAlbumCollections('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
     </span>
   </div>
 </template>
@@ -27,6 +27,9 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import firebase from "firebase/app";
+import 'firebase/database';
+const database = firebase.database();
 
 library.add(faThumbsUp);
 library.add(faThumbsDown);
@@ -35,7 +38,41 @@ library.add(faThumbsDown);
 export default class Album extends Vue {
   @Prop() private record!: object;
   @Prop() private records!: Array<{}>;
+
+  private get hasThumbsUp() {
+    if (this.record.collections.includes('thumbs-up')) {
+      return true;
+    }
+  }
+
+  private get hasThumbsDown() {
+    if (this.record.collections.includes('thumbs-down')) {
+      return true;
+    }
+  }
+
+  updateAlbumCollections(title) {
+    let updates = this.record.collections || [];
+      console.log(!updates.includes(title)); 
+    if (!updates.includes(title)) {
+      updates.push(title);
+      database.ref('/albums/' + this.$route.params.id + '/collections').set(updates);
+      this.updateCollectionTitles(title);
+    }
+  } 
+
+  updateCollectionTitles(title) {
+    database.ref('/collectionTitles').once('value').then(function(snapshot) {
+      const existingCollectionTitles = snapshot.val();
+      if (!existingCollectionTitles.includes(title)) {
+        const updates = [...existingCollectionTitles];
+        updates.push(title);
+        database.ref('/collectionTitles/').set(updates);
+      }
+    });
+  }
 }
+
 
 </script>
 
@@ -114,6 +151,10 @@ td:first-of-type {
 
 .thumbs-separator {
   font-size: 36px;
+}
+
+.active {
+  background-color:$theme-color;
 }
 @media screen and (min-width: 800px) {
   .album-heading {

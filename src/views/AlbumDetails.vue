@@ -24,7 +24,7 @@ let catalogData = Vue.observable({
 })
 
 export default class AlbumDetails extends Vue {
-   created () {
+  created () {
     database.ref('/').once('value').then(function(snapshot) {
       catalogData.collectionTitles = snapshot.val().collectionTitles;
       catalogData.albums = snapshot.val().albums;
