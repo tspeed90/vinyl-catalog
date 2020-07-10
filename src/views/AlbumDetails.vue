@@ -13,8 +13,7 @@ import 'firebase/database';
 const database = firebase.database();
 
 let catalogData = Vue.observable({
-  collectionTitles: [],
-  albums:{}
+  album:{}
 })
 
 @Component({
@@ -25,14 +24,13 @@ let catalogData = Vue.observable({
 
 export default class AlbumDetails extends Vue {
   created () {
-    database.ref('/').once('value').then(function(snapshot) {
-      catalogData.collectionTitles = snapshot.val().collectionTitles;
-      catalogData.albums = snapshot.val().albums;
+    database.ref('/albums/' + this.$route.params.id).on('value', function(snapshot) {
+      catalogData.album = snapshot.val();
     });
   }
 
   get displayRecord() {
-    return catalogData.albums[this.$route.params.id]
+    return catalogData.album;
   }
 }
 </script>
