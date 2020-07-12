@@ -20,11 +20,15 @@
       <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
       <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
     </span>
+    <Ratings :condition="sleeveCondition" type="Sleeve" />
+    <Ratings :condition="mediaCondition" type="Media" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import Ratings from '@/components/Ratings.vue';
+import { Album as AlbumInterface } from "@/records";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import firebase from "firebase/app";
@@ -34,10 +38,29 @@ const database = firebase.database();
 library.add(faThumbsUp);
 library.add(faThumbsDown);
 
-@Component
+@Component({
+  components: {
+    Ratings
+  }
+})
 export default class Album extends Vue {
-  @Prop() private record!: object;
-  @Prop() private records!: Array<{}>;
+  @Prop() private record!: AlbumInterface;
+  @Prop() private records!: AlbumInterface[];
+
+  private get sleeveCondition() {
+    if (this.record.copies[0].condition?.sleeve !== undefined) {
+      return this.record.copies[0].condition.sleeve;
+    } else {
+      return {};
+    }
+  }
+  private get mediaCondition() {
+    if (this.record.copies[0].condition?.media !== undefined) {
+      return this.record.copies[0].condition.media;
+    } else {
+      return {};
+    }
+  }
 
   private get hasThumbsUp() {
     return this.record.collections && this.record.collections.includes('thumbs-up');
