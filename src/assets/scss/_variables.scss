@@ -1,14 +1,14 @@
 $theme-yellow: #e8d84a;
 $theme-purple: #c996f3;
-$theme-cyan: #21bcebe3;
+$theme-mint: #75ebde;
 $theme-red: #ff3838b0;
 
-$theme-color: $theme-yellow;
+$theme-color: $theme-mint;
 
 :export {
     theme: $theme-color;
     yellow: $theme-yellow;
     purple: $theme-purple;
-    cyan: $theme-cyan;
+    mint: $theme-mint;
     red: $theme-red;
 }

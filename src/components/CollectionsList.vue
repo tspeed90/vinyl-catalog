@@ -20,21 +20,18 @@ export default class CollectionsList extends Vue {
 .collections-list-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   margin-top: 50px;
-  width: 95%;
   justify-content: center;
 }
 
 .collections-buttons {
-  padding: 8px;
+  padding: 2px 5px;
   font-size: 20px;
   background-color: $theme-color;
   border: solid 1px $theme-color;
   margin: 5px;
   color:#333;
-  min-width: 80px;
-  min-height: 50px;
+  min-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +39,12 @@ export default class CollectionsList extends Vue {
 
 @media screen and (min-width: 700px) {
   .collections-list-container {
-    max-width: 40%;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 0;
+    margin: 0px 40px 0 25px;
+    width: 200px;
   }
 }
 

@@ -1,14 +1,10 @@
 <template>
-  <div>
-    <router-link :to="{ name: 'Album Details', params: { id: randomAlbum.id } }" class="roulette-icon">
-      <p class="roulette-text">Roulette!</p>
-      <font-awesome-icon :icon="['fas', 'record-vinyl']" class="record-icon" title="select a random album from this collection" />
-    </router-link>
+  <div class="albums-list-container">
     <h1 class="collection-heading">{{heading}}</h1>
     <div
       v-for="(discography, artist) in recordsByArtist"
       v-bind:key="artist"
-      class="albums-list-container"
+      class="albums-list"
     >
       <h2>{{ artist }}</h2>
       <ul>
@@ -37,20 +33,13 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { Album } from "../records";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faRecordVinyl);
 
 @Component
 export default class AlbumsList extends Vue {
   @Prop() private records!: Album[];
   @Prop() private heading!: String;
 
-  get randomAlbum() {
-   const index = Math.floor(Math.random() * Math.floor(this.records.length - 1));
-   return this.records[index];
-  }
+ 
 
   get recordsByArtist() {
     const artistsSorted: { [key: string]: Album[] } = {};
@@ -69,25 +58,6 @@ export default class AlbumsList extends Vue {
 
 <style scoped lang="scss">
 @import "../assets/scss/_variables.scss";
-.roulette-icon {
-  width: 5%;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.record-icon {
-  font-size: 60px;
-  color: #444;
-  margin: 5px 0;
-}
-
-.roulette-text {
-  padding: 0;
-  margin: 0;
-}
 
 .collection-heading {
   width: 250px;
@@ -108,19 +78,28 @@ export default class AlbumsList extends Vue {
 @media screen and (min-width: 800px) {
   .collection-heading {
     width: 30%;
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 40px;
   }
 }
 .albums-list-container {
-  padding: 10px;
+  padding: 0 20px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
-  margin: 0 auto;
   text-align: left;
   margin-bottom: 10px;
-  border-bottom: $theme-color 4px solid;
   text-transform: lowercase;
+}
+
+h2::after {
+  content: '';
+  border-bottom: $theme-color 4px solid;
+  display: block;
+  width: 150px;
 }
 ul {
   margin: 0 auto;
@@ -141,7 +120,7 @@ a {
   text-transform: lowercase;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 50%;
   &:hover {
     text-decoration: underline;
   }
@@ -154,12 +133,12 @@ img {
 }
 
 @media screen and (min-width: 700px) {
-  ul {
-    max-width: 40%;
-    padding: 5px;
+  .albums-list-container {
+    width: 70%;
   }
-  h2 {
-    max-width: 40%;
+  .albums-list {
+    margin-left: 20px;
   }
+  
 }
 </style>
