@@ -83,6 +83,12 @@ export default class AlbumsList extends Vue {
     text-align: left;
     margin-bottom: 40px;
   }
+  .albums-list-container {
+    width: 70%;
+  }
+  .albums-list {
+    margin-left: 20px;
+  }
 }
 .albums-list-container {
   padding: 0 20px;
@@ -120,7 +126,6 @@ a {
   text-transform: lowercase;
   display: flex;
   align-items: center;
-  width: 50%;
   &:hover {
     text-decoration: underline;
   }
@@ -130,15 +135,7 @@ img {
   height: 90px;
   width: 90px;
   margin-right: 15px;
+  flex:0;
 }
 
-@media screen and (min-width: 700px) {
-  .albums-list-container {
-    width: 70%;
-  }
-  .albums-list {
-    margin-left: 20px;
-  }
-  
-}
 </style>
