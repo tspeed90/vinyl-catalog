@@ -3,7 +3,7 @@
     <Album v-if="this.$route.name == 'Album Details'" :record="displayRecord" />
     <AlbumEdit v-if="this.$route.name == 'Album Edit'" :record="displayRecord"/> 
     <router-link :to="editAlbumRoute">
-      <font-awesome-icon :icon="editLinkIcon" class="edit-icon" title="edit" />
+      <font-awesome-icon :icon="editLinkIcon" class="edit-icon" :title="editStatus" />
     </router-link>
   </div>
 </template>
@@ -56,6 +56,14 @@ export default class AlbumDetails extends Vue {
       return ['fas', 'pencil-alt'];
     } else {
       return ['fas', 'check'];
+    }
+  }
+
+  get editStatus() {
+     if (this.$route.name == 'Album Details') {
+      return 'edit';
+    } else {
+      return 'save changes';
     }
   }
 }
