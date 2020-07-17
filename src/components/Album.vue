@@ -17,8 +17,8 @@
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
     </ul>
     <span class="thumb-rating-container">
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
     </span>
     <Ratings :condition="sleeveCondition" type="Sleeve" />
     <Ratings :condition="mediaCondition" type="Media" />
@@ -70,19 +70,19 @@ export default class Album extends Vue {
     return this.record.collections && this.record.collections.includes('thumbs-down');
   }
 
-  onThumbsUp(title) {
+  onThumbsUp() {
     if (this.hasThumbsUp) {
-      this.removeCollectionFromRecord(title);
+      this.removeCollectionFromRecord('thumbs-up');
     } else {
-      this.addCollectionToRecord(title);
+      this.addCollectionToRecord('thumbs-up');
     }
   } 
 
-  onThumbsDown(title) {
+  onThumbsDown() {
     if (this.hasThumbsDown) {
-      this.removeCollectionFromRecord(title);
+      this.removeCollectionFromRecord('thumbs-down');
     } else {
-      this.addCollectionToRecord(title);
+      this.addCollectionToRecord('thumbs-down');
     }
   }
 
