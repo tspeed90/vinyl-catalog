@@ -2,13 +2,557 @@
   "collectionTitles": [
     "unplayed",
     "1980s",
-    "1960s",
     "1970s",
+    "1960s",
     "1950s"
   ],
   "albums": {
-    "786395": {
-      "id": "786395",
+    "20659665": {
+      "id": "20659665",
+      "artist": "ALFRED NEWMAN & KEN DARBY",
+      "album": "PORTS OF PARADISE",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1960s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/Y_FJw0Bnkrxusa3IcOGL0W-3vaM=/fit-in/600x585/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6763471-1486501617-6452.jpeg.jpg",
+          "year": "1960",
+          "catalogueNo": "STAO-1447",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "P",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "48537732": {
+      "id": "48537732",
+      "artist": "BEACH BOYS, THE",
+      "album": "BEACH BOYS CONCERT",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1960s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/le_AH-_GWBsULH6v1DUspv3qsOo=/fit-in/600x606/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8230541-1457571869-8862.jpeg.jpg",
+          "year": "1964",
+          "catalogueNo": "TAO 2198",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "59523725": {
+      "id": "59523725",
+      "artist": "ASSOCIATION, THE",
+      "album": "INSIGHT OUT",
+      "played": true,
+      "collections": [],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": true,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "60284191": {
+      "id": "60284191",
+      "artist": "A-HA",
+      "album": "HUNTING HIGH AND LOW",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1980s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/-Bb-UsnUTrBMCWhZ75RzrdGnKnc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8967740-1472432485-9110.jpeg.jpg",
+          "year": "1985",
+          "catalogueNo": "W125300",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "76201296": {
+      "id": "76201296",
+      "artist": "5TH DIMENSION, THE",
+      "album": "LOVE'S LINES, ANGLES & RHYMES",
+      "played": true,
+      "collections": [],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": true,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "95279349": {
+      "id": "95279349",
+      "artist": "AUM",
+      "album": "RESURRECTION",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "TUB",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "107200939": {
+      "id": "107200939",
+      "artist": "ALLMAN BROTHERS BAND, THE",
+      "album": "EAT A PEACH",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "109565105": {
+      "id": "109565105",
+      "artist": "5TH DIMENSION, THE",
+      "album": "PORTRAIT",
+      "played": true,
+      "collections": [
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/s9d_EOEHXT4a8mgzGDS6uXoTF_A=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4683412-1372193010-2276.jpeg.jpg",
+          "year": "1970",
+          "catalogueNo": "BELL 6045",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": "fairly scratched"
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "114054675": {
+      "id": "114054675",
+      "artist": "AC/DC",
+      "album": "HIGHWAY TO HELL",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/UocZj_NHp7V4VOhZrDJK5n7uW_8=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-380980-1438461372-4142.jpeg.jpg",
+          "year": "1979",
+          "catalogueNo": "SD 19244",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "131701335": {
+      "id": "131701335",
+      "artist": "BARRY WHITE",
+      "album": "JUST ANOTHER WAY TO SAY I LOVE YOU",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/ucNUx8oz0X6hPKu4jWysCTIxPLo=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-590758-1500812382-7608.jpeg.jpg",
+          "year": "1975",
+          "catalogueNo": "T-466",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "148762394": {
+      "id": "148762394",
+      "artist": "BE-BOP DELUXE",
+      "album": "SUNBURST FINISH",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/lSWRcESexQIzXeDWSSeFE3bi8q8=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1113908-1534617960-5948.jpeg.jpg",
+          "year": "1976",
+          "catalogueNo": "ST-11478",
+          "location": "TUB",
+          "needNewJacket": "FALSE",
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "163116749": {
+      "id": "163116749",
+      "artist": "AL KOOPER",
+      "album": "I STAND ALONE",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "166962665": {
+      "id": "166962665",
+      "artist": "AMERICA",
+      "album": "HARBOR",
+      "played": true,
+      "collections": [
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/CcFOCdpbkmm4J-nnK_sbNzzeLko=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7242248-1487336238-1714.jpeg.jpg",
+          "year": "1977",
+          "catalogueNo": "BSK 3017",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "179726691": {
+      "id": "179726691",
+      "artist": ".38 SPECIAL",
+      "album": "SPECIAL FORCES",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "184516881": {
+      "id": "184516881",
+      "artist": "ANDY GRIFFITH",
+      "album": "JUST FOR THE LAUGHS",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1950s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/DbpOFMMgyt6wFUuQ1Fxh3pYfyaU=/fit-in/598x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1297592-1346307534-9793.jpeg.jpg",
+          "year": "1958",
+          "catalogueNo": "T 962",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "195402365": {
+      "id": "195402365",
+      "artist": "BABYS, THE",
+      "album": "ANTHOLOGY",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1980s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/WSuNA_1u1QEws31qcto70tlCVHc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1325902-1265397898.jpeg.jpg",
+          "year": "1981",
+          "catalogueNo": "CHR 1351",
+          "location": "shelf",
+          "needNewJacket": "TRUE",
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "N/A",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "199866715": {
+      "id": "199866715",
+      "artist": "5TH DIMENSION, THE",
+      "album": "INDIVIDUALLY & COLLECTIVELY",
+      "played": true,
+      "collections": [],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": true,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "239127420": {
+      "id": "239127420",
+      "artist": "ALICE COOPER",
+      "album": "KILLER",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "261802468": {
+      "id": "261802468",
       "artist": "BEATLES, THE",
       "album": "LIVE AT THE STAR CLUB - HAMBURG",
       "played": false,
@@ -27,11 +571,11 @@
           "condition": {
             "sleeve": {
               "rating": "VG+",
-              "notes": null
+              "notes": ""
             },
             "media": {
               "rating": "VG+",
-              "notes": null
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -39,10 +583,10 @@
         }
       ]
     },
-    "25725022": {
-      "id": "25725022",
-      "artist": "AVERAGE WHITE BAND",
-      "album": "CUT THE CAKE",
+    "267721569": {
+      "id": "267721569",
+      "artist": "ATLANTA RHYTHM SECTION",
+      "album": "CHAMPAGNE JAM",
       "played": false,
       "collections": [
         "unplayed"
@@ -55,12 +599,12 @@
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -68,10 +612,10 @@
         }
       ]
     },
-    "33396058": {
-      "id": "33396058",
-      "artist": "AMERICA",
-      "album": "AMERICA'S GREATEST HITS",
+    "312582774": {
+      "id": "312582774",
+      "artist": "AC/DC",
+      "album": "DIRTY DEEDS DONE DIRT CHEAP",
       "played": false,
       "collections": [
         "unplayed"
@@ -84,12 +628,12 @@
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": "WARPED"
             }
           },
           "purchasedByMe": false,
@@ -97,41 +641,10 @@
         }
       ]
     },
-    "36363971": {
-      "id": "36363971",
-      "artist": "BEATLES, THE",
-      "album": "AT THE HOLLYWOOD BOWL",
-      "played": true,
-      "collections": [
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/IOlu6av44MXVpwnPnedYcgghRMQ=/fit-in/500x503/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1192346-1275887185.jpeg.jpg",
-          "year": "1977",
-          "catalogueNo": "SMAS 11638",
-          "location": "shelf",
-          "needNewJacket": "FALSE",
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": "VG+",
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "44512351": {
-      "id": "44512351",
-      "artist": "BAD COMPANY",
-      "album": "BURNIN' SKY",
+    "371192223": {
+      "id": "371192223",
+      "artist": "AL STEWART",
+      "album": "YEAR OF THE CAT",
       "played": false,
       "collections": [
         "unplayed",
@@ -139,20 +652,20 @@
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/a7E2sFELciXJrv8c_Z1WLRV45XI=/fit-in/600x604/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-380968-1249087000.jpeg.jpg",
-          "year": "1977",
-          "catalogueNo": "SS 8500",
+          "art": "https://img.discogs.com/C7ajk3Bzy5dQ6ijDu5WEjsOJ4f8=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3120128-1401080006-9758.jpeg.jpg",
+          "year": "1976",
+          "catalogueNo": "JXS-7022",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -160,10 +673,132 @@
         }
       ]
     },
-    "44618784": {
-      "id": "44618784",
-      "artist": "BEATLES, THE",
-      "album": "SGT. PEPPER'S LONELY HEARTS CLUB BAND",
+    "402402012": {
+      "id": "402402012",
+      "artist": "AL JARREAU",
+      "album": "BREAKIN' AWAY",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1980s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/KQEH1dQhAoafvriXuqKGCVtCBoQ=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-501980-1239441071.jpeg.jpg",
+          "year": "1981",
+          "catalogueNo": "BSK 3576",
+          "location": "TUB",
+          "needNewJacket": "FALSE",
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "MISSING INNER JACKET",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "405286759": {
+      "id": "405286759",
+      "artist": "AMERICA",
+      "album": "HEARTS",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "415510290": {
+      "id": "415510290",
+      "artist": "ARETHA FRANKLIN",
+      "album": "THE BEST OF ARETHA FRANKLIN",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1980s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/r_BVi_bpSS1KTv6QIuoUKoY5Doc=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1164621-1306632571.jpeg.jpg",
+          "year": "1984",
+          "catalogueNo": "81280-1-Y",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "431882032": {
+      "id": "431882032",
+      "artist": "AC/DC",
+      "album": "LET THERE BE ROCK",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "436989734": {
+      "id": "436989734",
+      "artist": "ALLAN SHERMAN",
+      "album": "MY SON, THE FOLK SINGER",
       "played": false,
       "collections": [
         "unplayed",
@@ -171,20 +806,20 @@
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/9Bc2W1Ol1t0vh989I0EHc9Xmv6s=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1334394-1318899563.jpeg.jpg",
-          "year": "1968",
-          "catalogueNo": "SMAS 2653",
-          "location": "shelf",
+          "art": "https://img.discogs.com/mOuXdWVcc0mujX_6kULI_7Gu4SY=/fit-in/579x576/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2540633-1504488156-6217.jpeg.jpg",
+          "year": "1962",
+          "catalogueNo": "WS 1475",
+          "location": "TUB",
           "needNewJacket": "FALSE",
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "RING WEAR, MISSING INNER SLEEVE",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -192,55 +827,219 @@
         }
       ]
     },
-    "48267348": {
-      "id": "48267348",
-      "artist": "5TH DIMENSION, THE",
-      "album": "STONED SOUL PICNIC",
+    "470275887": {
+      "id": "470275887",
+      "artist": "AMERICA",
+      "album": "HEARTS",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "TUB",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "475728332": {
+      "id": "475728332",
+      "artist": "BABYS, THE",
+      "album": "BROKEN HEART",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/z7HOIL51RnDVqTLq7gRgx8cPkIk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1315532-1481671815-5012.jpeg.jpg",
+          "year": "1977",
+          "catalogueNo": "CHR 1150",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "485318468": {
+      "id": "485318468",
+      "artist": "BEACH BOYS, THE",
+      "album": "SURFER GIRL",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1960s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/r3MQvW_-4P8hS0DYFHPOaoVFm-E=/fit-in/600x593/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2668119-1584576067-1545.jpeg.jpg",
+          "year": "1963",
+          "catalogueNo": "ST 1981",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "507414502": {
+      "id": "507414502",
+      "artist": "BACHMAN-TURNER OVERDRIVE",
+      "album": "FOUR WHEEL DRIVE",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/FdWaE45ltSuT_TBTMyw2NFvzqW4=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1458503-1422646184-1745.jpeg.jpg",
+          "year": "1975",
+          "catalogueNo": "SRM 1-1027",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "512397748": {
+      "id": "512397748",
+      "artist": "BARBARA MANDRELL",
+      "album": "THE BEST OF",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/YQ2gh9vGD8VuAEhbsjlX29waJyo=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7364303-1439876850-6566.jpeg.jpg",
+          "year": "1979",
+          "catalogueNo": "AY-1119",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "VG+",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "529587762": {
+      "id": "529587762",
+      "artist": "BABYS, THE",
+      "album": "ANTHOLOGY",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1980s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/WSuNA_1u1QEws31qcto70tlCVHc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1325902-1265397898.jpeg.jpg",
+          "year": "1981",
+          "catalogueNo": "CHR 1351",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "538320227": {
+      "id": "538320227",
+      "artist": "ATLANTA RHYTHM SECTION",
+      "album": "QUINELLA",
       "played": true,
-      "collections": [],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "70396914": {
-      "id": "70396914",
-      "artist": "AL KOOPER",
-      "album": "I STAND ALONE",
-      "played": false,
       "collections": [
-        "unplayed"
+        "1980s"
       ],
       "copies": [
         {
-          "catalogueNo": null,
+          "art": "https://img.discogs.com/2NmKgG6A3gOoRW6Y2DmaqX-P3OY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7460709-1441930853-1650.jpeg.jpg",
+          "year": "1981",
+          "catalogueNo": "FC 37550",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -248,37 +1047,8 @@
         }
       ]
     },
-    "75340510": {
-      "id": "75340510",
-      "artist": "AL KOOPER AND MIKE BLOOMFIELD",
-      "album": "THE LIVE ADVENTURES OF",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "108101728": {
-      "id": "108101728",
+    "557806293": {
+      "id": "557806293",
       "artist": "BE BOP DELUXE",
       "album": "MODERN MUSIC",
       "played": false,
@@ -297,11 +1067,11 @@
           "condition": {
             "sleeve": {
               "rating": "VG+",
-              "notes": null
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -309,8 +1079,95 @@
         }
       ]
     },
-    "126014974": {
-      "id": "126014974",
+    "558539899": {
+      "id": "558539899",
+      "artist": "AEROSMITH",
+      "album": "ROCKS",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "584450191": {
+      "id": "584450191",
+      "artist": "AMERICA",
+      "album": "AMERICA'S GREATEST HITS",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "595749362": {
+      "id": "595749362",
+      "artist": "AVERAGE WHITE BAND",
+      "album": "FEEL NO FRET",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "616486874": {
+      "id": "616486874",
       "artist": "BEACH BOYS, THE",
       "album": "ALL SUMMER LONG",
       "played": false,
@@ -328,12 +1185,12 @@
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -341,30 +1198,30 @@
         }
       ]
     },
-    "149519004": {
-      "id": "149519004",
-      "artist": "5TH DIMENSION, THE",
-      "album": "PORTRAIT",
+    "670369527": {
+      "id": "670369527",
+      "artist": "BEATLES, THE",
+      "album": "SGT. PEPPER'S LONELY HEARTS CLUB BAND",
       "played": true,
       "collections": [
-        "1970s"
+        "1960s"
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/s9d_EOEHXT4a8mgzGDS6uXoTF_A=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4683412-1372193010-2276.jpeg.jpg",
-          "year": "1970",
-          "catalogueNo": "BELL 6045",
+          "art": "https://img.discogs.com/9Bc2W1Ol1t0vh989I0EHc9Xmv6s=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1334394-1318899563.jpeg.jpg",
+          "year": "1968",
+          "catalogueNo": "SMAS 2653",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": "fairly scratched"
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -372,96 +1229,8 @@
         }
       ]
     },
-    "167395708": {
-      "id": "167395708",
-      "artist": "AC/DC",
-      "album": "FOR THOSE ABOUT TO ROCK",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "170856493": {
-      "id": "170856493",
-      "artist": "BABYS, THE",
-      "album": "BROKEN HEART",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/z7HOIL51RnDVqTLq7gRgx8cPkIk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1315532-1481671815-5012.jpeg.jpg",
-          "year": "1977",
-          "catalogueNo": "CHR 1150",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "192892379": {
-      "id": "192892379",
-      "artist": "5TH DIMENSION, THE",
-      "album": "LOVE'S LINES, ANGLES & RHYMES",
-      "played": true,
-      "collections": [],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": true,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "269230122": {
-      "id": "269230122",
+    "756645068": {
+      "id": "756645068",
       "artist": "AVERAGE WHITE BAND",
       "album": "SOUL SEARCHING",
       "played": false,
@@ -483,8 +1252,8 @@
               "notes": "case is missing"
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -492,10 +1261,274 @@
         }
       ]
     },
-    "274253000": {
-      "id": "274253000",
-      "artist": "ALABAMA",
-      "album": "FEELS SO RIGHT",
+    "805317519": {
+      "id": "805317519",
+      "artist": "AL STEWART",
+      "album": "TIME PASSAGES",
+      "played": true,
+      "collections": [
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/_cxSTy1Ok_tLLPWv91V2d-MxEtY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-740645-1544595337-5084.jpeg.jpg",
+          "year": "1978",
+          "catalogueNo": "AB 4190",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": true,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "846133232": {
+      "id": "846133232",
+      "artist": "5TH DIMENSION, THE",
+      "album": "STONED SOUL PICNIC",
+      "played": true,
+      "collections": [],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "860320418": {
+      "id": "860320418",
+      "artist": "AL KOOPER AND MIKE BLOOMFIELD",
+      "album": "THE LIVE ADVENTURES OF",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "870410552": {
+      "id": "870410552",
+      "artist": "AVERAGE WHITE BAND",
+      "album": "CUT THE CAKE",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "880385114": {
+      "id": "880385114",
+      "artist": "AC/DC",
+      "album": "IF YOU WANT BLOOD",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "894116094": {
+      "id": "894116094",
+      "artist": "AC/DC",
+      "album": "BACK IN BLACK",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "917551284": {
+      "id": "917551284",
+      "artist": "ALAN PARSONS PROJECT, THE",
+      "album": "TALES OF MYSTERY AND IMAGINATION",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "930359047": {
+      "id": "930359047",
+      "artist": "BEATLES, THE",
+      "album": "LET IT BE",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/6oc0h3JrFPcNDjhUq9DO3EIR1qU=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-377554-1340355126-1714.jpeg.jpg",
+          "year": "1970",
+          "catalogueNo": "AR 34001",
+          "location": "shelf",
+          "needNewJacket": "FALSE",
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "934552466": {
+      "id": "934552466",
+      "artist": "AC/DC",
+      "album": "FOR THOSE ABOUT TO ROCK",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "940041230": {
+      "id": "940041230",
+      "artist": "A-HA",
+      "album": "HUNTING HIGH AND LOW",
       "played": false,
       "collections": [
         "unplayed",
@@ -503,20 +1536,20 @@
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/XsiFJy6byu_bubFHIwr8WAnVv8w=/fit-in/600x608/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1158195-1559270101-6673.jpeg.jpg",
-          "year": "1981",
-          "catalogueNo": "AHL 1-3930",
+          "art": "https://img.discogs.com/hjnT8pSBk9e-IKvG2uJ4p_mswEQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-322188-1156582944.jpeg.jpg",
+          "year": "1985",
+          "catalogueNo": "925 300-1",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -524,8 +1557,100 @@
         }
       ]
     },
-    "293347179": {
-      "id": "293347179",
+    "962600151": {
+      "id": "962600151",
+      "artist": "ALIVE IN ALASKA",
+      "album": "LOVE'S WAY",
+      "played": false,
+      "collections": [
+        "unplayed"
+      ],
+      "copies": [
+        {
+          "catalogueNo": null,
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "967263661": {
+      "id": "967263661",
+      "artist": "BEATLES, THE",
+      "album": "SGT. PEPPER'S LONELY HEARTS CLUB BAND",
+      "played": false,
+      "collections": [
+        "unplayed",
+        "1960s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/9Bc2W1Ol1t0vh989I0EHc9Xmv6s=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1334394-1318899563.jpeg.jpg",
+          "year": "1968",
+          "catalogueNo": "SMAS 2653",
+          "location": "shelf",
+          "needNewJacket": "FALSE",
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "969938563": {
+      "id": "969938563",
+      "artist": "BAND, THE",
+      "album": "STAGE FRIGHT",
+      "played": true,
+      "collections": [
+        "1970s"
+      ],
+      "copies": [
+        {
+          "art": "https://img.discogs.com/Xb3pBbh7AbAUhZ8lsQ9m5X2dMXw=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-942017-1416093681-5648.jpeg.jpg",
+          "year": "1970",
+          "catalogueNo": "SW 425",
+          "location": "shelf",
+          "needNewJacket": null,
+          "needInnerSleeve": null,
+          "condition": {
+            "sleeve": {
+              "rating": "",
+              "notes": ""
+            },
+            "media": {
+              "rating": "VG+",
+              "notes": ""
+            }
+          },
+          "purchasedByMe": false,
+          "purchaseDate": null
+        }
+      ]
+    },
+    "973491574": {
+      "id": "973491574",
       "artist": "BAD COMPANY",
       "album": "RUN WITH THE PACK",
       "played": false,
@@ -544,11 +1669,11 @@
           "condition": {
             "sleeve": {
               "rating": "VG",
-              "notes": null
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -556,71 +1681,10 @@
         }
       ]
     },
-    "317892087": {
-      "id": "317892087",
-      "artist": "AC/DC",
-      "album": "LET THERE BE ROCK",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "318342437": {
-      "id": "318342437",
-      "artist": "ATLANTA RHYTHM SECTION",
-      "album": "QUINELLA",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1980s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/2NmKgG6A3gOoRW6Y2DmaqX-P3OY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7460709-1441930853-1650.jpeg.jpg",
-          "year": "1981",
-          "catalogueNo": "FC 37550",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "324436398": {
-      "id": "324436398",
-      "artist": "BARRY WHITE",
-      "album": "JUST ANOTHER WAY TO SAY I LOVE YOU",
+    "973599331": {
+      "id": "973599331",
+      "artist": "BAD COMPANY",
+      "album": "BURNIN' SKY",
       "played": false,
       "collections": [
         "unplayed",
@@ -628,20 +1692,20 @@
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/ucNUx8oz0X6hPKu4jWysCTIxPLo=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-590758-1500812382-7608.jpeg.jpg",
-          "year": "1975",
-          "catalogueNo": "T-466",
+          "art": "https://img.discogs.com/a7E2sFELciXJrv8c_Z1WLRV45XI=/fit-in/600x604/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-380968-1249087000.jpeg.jpg",
+          "year": "1977",
+          "catalogueNo": "SS 8500",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -649,217 +1713,8 @@
         }
       ]
     },
-    "334020357": {
-      "id": "334020357",
-      "artist": "AMERICA",
-      "album": "HEARTS",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "349453269": {
-      "id": "349453269",
-      "artist": "AC/DC",
-      "album": "IF YOU WANT BLOOD",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "368378175": {
-      "id": "368378175",
-      "artist": "BACHMAN-TURNER OVERDRIVE",
-      "album": "FOUR WHEEL DRIVE",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/FdWaE45ltSuT_TBTMyw2NFvzqW4=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1458503-1422646184-1745.jpeg.jpg",
-          "year": "1975",
-          "catalogueNo": "SRM 1-1027",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "375094749": {
-      "id": "375094749",
-      "artist": "ATLANTA RHYTHM SECTION",
-      "album": "CHAMPAGNE JAM",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "428430130": {
-      "id": "428430130",
-      "artist": "ALLMAN BROTHERS BAND, THE",
-      "album": "EAT A PEACH",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "448137315": {
-      "id": "448137315",
-      "artist": "A-HA",
-      "album": "HUNTING HIGH AND LOW",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1980s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/hjnT8pSBk9e-IKvG2uJ4p_mswEQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-322188-1156582944.jpeg.jpg",
-          "year": "1985",
-          "catalogueNo": "925 300-1",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "451874204": {
-      "id": "451874204",
-      "artist": "AMERICA",
-      "album": "HEARTS",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "TUB",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "460738260": {
-      "id": "460738260",
+    "985493441": {
+      "id": "985493441",
       "artist": "AEROSMITH",
       "album": "LIVE",
       "played": false,
@@ -877,12 +1732,12 @@
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -890,258 +1745,8 @@
         }
       ]
     },
-    "488935831": {
-      "id": "488935831",
-      "artist": "AL STEWART",
-      "album": "YEAR OF THE CAT",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/C7ajk3Bzy5dQ6ijDu5WEjsOJ4f8=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3120128-1401080006-9758.jpeg.jpg",
-          "year": "1976",
-          "catalogueNo": "JXS-7022",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "525153918": {
-      "id": "525153918",
-      "artist": "AUM",
-      "album": "RESURRECTION",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "TUB",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "548643804": {
-      "id": "548643804",
-      "artist": "AMERICA",
-      "album": "HARBOR",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/CcFOCdpbkmm4J-nnK_sbNzzeLko=/fit-in/600x597/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7242248-1487336238-1714.jpeg.jpg",
-          "year": "1977",
-          "catalogueNo": "BSK 3017",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "593131890": {
-      "id": "593131890",
-      "artist": "BABYS, THE",
-      "album": "ANTHOLOGY",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1980s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/WSuNA_1u1QEws31qcto70tlCVHc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1325902-1265397898.jpeg.jpg",
-          "year": "1981",
-          "catalogueNo": "CHR 1351",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "599170523": {
-      "id": "599170523",
-      "artist": "AC/DC",
-      "album": "DIRTY DEEDS DONE DIRT CHEAP",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": "WARPED"
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "612956825": {
-      "id": "612956825",
-      "artist": "BEATLES, THE",
-      "album": "LET IT BE",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/6oc0h3JrFPcNDjhUq9DO3EIR1qU=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-377554-1340355126-1714.jpeg.jpg",
-          "year": "1970",
-          "catalogueNo": "AR 34001",
-          "location": "shelf",
-          "needNewJacket": "FALSE",
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "677673008": {
-      "id": "677673008",
-      "artist": "BEACH BOYS, THE",
-      "album": "SURFER GIRL",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/r3MQvW_-4P8hS0DYFHPOaoVFm-E=/fit-in/600x593/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2668119-1584576067-1545.jpeg.jpg",
-          "year": "1963",
-          "catalogueNo": "ST 1981",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "681504232": {
-      "id": "681504232",
-      "artist": "BEACH BOYS, THE",
-      "album": "BEACH BOYS CONCERT",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/le_AH-_GWBsULH6v1DUspv3qsOo=/fit-in/600x606/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8230541-1457571869-8862.jpeg.jpg",
-          "year": "1964",
-          "catalogueNo": "TAO 2198",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "685308399": {
-      "id": "685308399",
+    "988082989": {
+      "id": "988082989",
       "artist": "ATOMIC ROOSTER",
       "album": "IN HEARING OF",
       "played": false,
@@ -1159,12 +1764,12 @@
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,
@@ -1172,42 +1777,10 @@
         }
       ]
     },
-    "691551631": {
-      "id": "691551631",
-      "artist": "BEATLES, THE",
-      "album": "MEET THE BEATLES",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/WoZoGv_siq06wyfKVvdBsFu2CEo=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1349112-1517053004-6131.jpeg.jpg",
-          "year": "1964",
-          "catalogueNo": "ST 2047",
-          "location": "shelf",
-          "needNewJacket": "FALSE",
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "701517270": {
-      "id": "701517270",
-      "artist": "ARETHA FRANKLIN",
-      "album": "THE BEST OF ARETHA FRANKLIN",
+    "993424313": {
+      "id": "993424313",
+      "artist": "ALABAMA",
+      "album": "FEELS SO RIGHT",
       "played": false,
       "collections": [
         "unplayed",
@@ -1215,595 +1788,20 @@
       ],
       "copies": [
         {
-          "art": "https://img.discogs.com/r_BVi_bpSS1KTv6QIuoUKoY5Doc=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1164621-1306632571.jpeg.jpg",
-          "year": "1984",
-          "catalogueNo": "81280-1-Y",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "723971438": {
-      "id": "723971438",
-      "artist": "A-HA",
-      "album": "HUNTING HIGH AND LOW",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1980s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/-Bb-UsnUTrBMCWhZ75RzrdGnKnc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8967740-1472432485-9110.jpeg.jpg",
-          "year": "1985",
-          "catalogueNo": "W125300",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "730217203": {
-      "id": "730217203",
-      "artist": "ASSOCIATION, THE",
-      "album": "INSIGHT OUT",
-      "played": true,
-      "collections": [],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": true,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "739569168": {
-      "id": "739569168",
-      "artist": "AC/DC",
-      "album": "HIGHWAY TO HELL",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/UocZj_NHp7V4VOhZrDJK5n7uW_8=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-380980-1438461372-4142.jpeg.jpg",
-          "year": "1979",
-          "catalogueNo": "SD 19244",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "772180380": {
-      "id": "772180380",
-      "artist": "AC/DC",
-      "album": "BACK IN BLACK",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "790418266": {
-      "id": "790418266",
-      "artist": ".38 SPECIAL",
-      "album": "SPECIAL FORCES",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "796174468": {
-      "id": "796174468",
-      "artist": "5TH DIMENSION, THE",
-      "album": "INDIVIDUALLY & COLLECTIVELY",
-      "played": true,
-      "collections": [],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": true,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "809718540": {
-      "id": "809718540",
-      "artist": "BEATLES, THE",
-      "album": "SGT. PEPPER'S LONELY HEARTS CLUB BAND",
-      "played": true,
-      "collections": [
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/9Bc2W1Ol1t0vh989I0EHc9Xmv6s=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1334394-1318899563.jpeg.jpg",
-          "year": "1968",
-          "catalogueNo": "SMAS 2653",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "815085476": {
-      "id": "815085476",
-      "artist": "AL STEWART",
-      "album": "TIME PASSAGES",
-      "played": true,
-      "collections": [
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/_cxSTy1Ok_tLLPWv91V2d-MxEtY=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-740645-1544595337-5084.jpeg.jpg",
-          "year": "1978",
-          "catalogueNo": "AB 4190",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": true,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "828421320": {
-      "id": "828421320",
-      "artist": "AVERAGE WHITE BAND",
-      "album": "FEEL NO FRET",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "841937535": {
-      "id": "841937535",
-      "artist": "BAND, THE",
-      "album": "STAGE FRIGHT",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/Xb3pBbh7AbAUhZ8lsQ9m5X2dMXw=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-942017-1416093681-5648.jpeg.jpg",
-          "year": "1970",
-          "catalogueNo": "SW 425",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "851148018": {
-      "id": "851148018",
-      "artist": "BARBARA MANDRELL",
-      "album": "THE BEST OF",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1970s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/YQ2gh9vGD8VuAEhbsjlX29waJyo=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7364303-1439876850-6566.jpeg.jpg",
-          "year": "1979",
-          "catalogueNo": "AY-1119",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": "VG+",
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "851240525": {
-      "id": "851240525",
-      "artist": "ALFRED NEWMAN & KEN DARBY",
-      "album": "PORTS OF PARADISE",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/Y_FJw0Bnkrxusa3IcOGL0W-3vaM=/fit-in/600x585/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6763471-1486501617-6452.jpeg.jpg",
-          "year": "1960",
-          "catalogueNo": "STAO-1447",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": "P",
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "878048182": {
-      "id": "878048182",
-      "artist": "ALICE COOPER",
-      "album": "KILLER",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "903586778": {
-      "id": "903586778",
-      "artist": "ANDY GRIFFITH",
-      "album": "JUST FOR THE LAUGHS",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1950s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/DbpOFMMgyt6wFUuQ1Fxh3pYfyaU=/fit-in/598x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1297592-1346307534-9793.jpeg.jpg",
-          "year": "1958",
-          "catalogueNo": "T 962",
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "944522138": {
-      "id": "944522138",
-      "artist": "ALIVE IN ALASKA",
-      "album": "LOVE'S WAY",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "961073626": {
-      "id": "961073626",
-      "artist": "BABYS, THE",
-      "album": "ANTHOLOGY",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1980s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/WSuNA_1u1QEws31qcto70tlCVHc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1325902-1265397898.jpeg.jpg",
+          "art": "https://img.discogs.com/XsiFJy6byu_bubFHIwr8WAnVv8w=/fit-in/600x608/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1158195-1559270101-6673.jpeg.jpg",
           "year": "1981",
-          "catalogueNo": "CHR 1351",
-          "location": "shelf",
-          "needNewJacket": "TRUE",
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": "N/A",
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "966538637": {
-      "id": "966538637",
-      "artist": "BEATLES, THE",
-      "album": "ABBEY ROAD",
-      "played": false,
-      "collections": [
-        "unplayed",
-        "1960s"
-      ],
-      "copies": [
-        {
-          "art": "https://img.discogs.com/QmAhJ4l2NVGgWunWDVwlhaokDlw=/fit-in/600x609/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-611455-1492305737-7090.mpo.jpg",
-          "year": "1969",
-          "catalogueNo": "SO-383",
-          "location": "shelf",
-          "needNewJacket": "FALSE",
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": "VG",
-              "notes": "no splitting on outer jacket, some writing and old label remnants, inner jacket mildly splitting on bottom "
-            },
-            "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "967009542": {
-      "id": "967009542",
-      "artist": "ALAN PARSONS PROJECT, THE",
-      "album": "TALES OF MYSTERY AND IMAGINATION",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
+          "catalogueNo": "AHL 1-3930",
           "location": "shelf",
           "needNewJacket": null,
           "needInnerSleeve": null,
           "condition": {
             "sleeve": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             },
             "media": {
-              "rating": null,
-              "notes": null
-            }
-          },
-          "purchasedByMe": false,
-          "purchaseDate": null
-        }
-      ]
-    },
-    "973525364": {
-      "id": "973525364",
-      "artist": "AEROSMITH",
-      "album": "\"ROCKS\"",
-      "played": false,
-      "collections": [
-        "unplayed"
-      ],
-      "copies": [
-        {
-          "catalogueNo": null,
-          "location": "shelf",
-          "needNewJacket": null,
-          "needInnerSleeve": null,
-          "condition": {
-            "sleeve": {
-              "rating": null,
-              "notes": null
-            },
-            "media": {
-              "rating": null,
-              "notes": null
+              "rating": "",
+              "notes": ""
             }
           },
           "purchasedByMe": false,

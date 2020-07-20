@@ -123,12 +123,12 @@ async function convertToJson(collection) {
           needInnerSleeve: null,
           condition: {
             sleeve: {
-              rating: emptyToNull(row.sleeveRating),
-              notes: emptyToNull(row.sleeveNotes)
+              rating: row.sleeveRating,
+              notes: row.sleeveNotes
             },
             media: {
-              rating: emptyToNull(row.mediaRating),
-              notes: emptyToNull(row.mediaNotes)
+              rating: row.mediaRating,
+              notes: row.mediaNotes
             }
           },
           purchasedByMe: convertToBoolean(row.purchasedByMe),
