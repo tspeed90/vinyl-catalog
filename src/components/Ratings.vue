@@ -1,6 +1,6 @@
 <template>
   <div class="ratings-container">
-    <p>{{type}} rating: {{condition.rating || "Unknown"}}</p>
+    <span>{{type}} rating: {{condition.rating || "Unknown"}}</span>
   </div>
 </template>
 

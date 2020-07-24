@@ -28,17 +28,17 @@
       </span>
     </div>
     <span class="thumb-rating-container">
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp('thumbs-up')"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
-      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown('thumbs-down')"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
+      <button class="thumbs-button" v-bind:class="{ active: hasThumbsDown }" v-on:click="onThumbsDown"><font-awesome-icon :icon="['fas', 'thumbs-down']" class="thumbs-icon" title="thumbs down" /></button>
     </span>
-    <Ratings :condition="sleeveCondition" type="Sleeve" />
-    <Ratings :condition="mediaCondition" type="Media" />
+    <RatingsEdit :condition="sleeveCondition" type="Sleeve" />
+    <RatingsEdit :condition="mediaCondition" type="Media" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
-import Ratings from '@/components/Ratings.vue';
+import RatingsEdit from '@/components/RatingsEdit.vue';
 import { Album as AlbumInterface } from "@/records";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
@@ -51,26 +51,25 @@ library.add(faThumbsDown);
 
 @Component({
   components: {
-    Ratings
+    RatingsEdit
   }
 })
+
 export default class Album extends Vue {
   @Prop() private record!: AlbumInterface;
   @Prop() private records!: AlbumInterface[];
 
   private get sleeveCondition() {
-    if (this.record.copies[0].condition?.sleeve !== undefined) {
-      return this.record.copies[0].condition.sleeve;
-    } else {
-      return {};
+    if (this.record.copies[0].condition?.sleeve == undefined) {
+      this.record.copies[0].condition.sleeve = {rating: "", notes: ""};
     }
+    return this.record.copies[0].condition.sleeve;
   }
   private get mediaCondition() {
-    if (this.record.copies[0].condition?.media !== undefined) {
+    if (this.record.copies[0].condition?.media == undefined) {
+      return this.record.copies[0].condition.media = {rating: "", notes: ""};
+    } 
       return this.record.copies[0].condition.media;
-    } else {
-      return {};
-    }
   }
 
   private get hasThumbsUp() {
@@ -81,19 +80,19 @@ export default class Album extends Vue {
     return this.record.collections && this.record.collections.includes('thumbs-down');
   }
 
-  onThumbsUp(title) {
+  onThumbsUp() {
     if (this.hasThumbsUp) {
-      this.removeCollectionFromRecord(title);
+      this.removeCollectionFromRecord('thumbs-up');
     } else {
-      this.addCollectionToRecord(title);
+      this.addCollectionToRecord('thumbs-up');
     }
   } 
 
-  onThumbsDown(title) {
+  onThumbsDown() {
     if (this.hasThumbsDown) {
-      this.removeCollectionFromRecord(title);
+      this.removeCollectionFromRecord('thumbs-down');
     } else {
-      this.addCollectionToRecord(title);
+      this.addCollectionToRecord('thumbs-down');
     }
   }
 
@@ -128,11 +127,8 @@ export default class Album extends Vue {
     database.ref('/albums/' + this.$route.params.id).set(value);
   }
 }
-
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../assets/scss/_variables.scss";
 .album-heading {
