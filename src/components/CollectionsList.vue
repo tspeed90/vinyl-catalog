@@ -1,7 +1,7 @@
 <template>
-  <div class="collections-list-container" v-if="catalogData.collectionTitles.length > 0">
+  <div class="collections-list-container" v-if="Object.keys(catalogData.collectionTitles).length > 0">
     <router-link to="/collections" v-bind:key="all-albums" class="collections-buttons">all albums</router-link>
-    <router-link :to="{name: 'Collections List', params: { collection: title } }"  v-for="title in catalogData.collectionTitles" v-bind:key="title" class="collections-buttons">{{title}}</router-link>
+    <router-link :to="{name: 'Collections List', params: { collection: title } }"  v-for="title in Object.keys(catalogData.collectionTitles)" v-bind:key="title" class="collections-buttons">{{title}}</router-link>
   </div>
 </template>
 

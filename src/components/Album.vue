@@ -101,13 +101,15 @@ export default class Album extends Vue {
     database.ref('/albums/' + this.$route.params.id + '/collections').set(updates);
   }
 
-  updateCollectionTitles(title) {
+  updateCollectionTitles(title, belongsTo = "") {
     database.ref('/collectionTitles').once('value').then(function(snapshot) {
-      const existingCollectionTitles = snapshot.val();
+      const existingCollectionTitles = Object.keys(snapshot.val());
       if (!existingCollectionTitles.includes(title)) {
-        const updates = [...existingCollectionTitles];
-        updates.push(title);
-        database.ref('/collectionTitles/').set(updates);
+        const updates = {
+          displayName: title,
+          belongsTo: belongsTo
+        };
+        database.ref('/collectionTitles/' + title).set(updates);
       }
     });
   }

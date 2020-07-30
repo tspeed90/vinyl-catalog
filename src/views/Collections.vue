@@ -21,7 +21,7 @@ import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
 library.add(faRecordVinyl);
 
 let catalogData = Vue.observable({
-  collectionTitles: [],
+  collectionTitles: {},
   albums: {}
 })
 

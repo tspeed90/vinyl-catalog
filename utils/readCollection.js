@@ -50,10 +50,14 @@ function selectBestDiscogsMatch(discogsResults, csvCat) {
 }
 
 // TODO: rewrite to avoid global variable :(
-const collectionTitles = [];
-function addCollectionTitles(collectionTag) {
-  if (!collectionTitles.includes(collectionTag)) {
-    collectionTitles.push(collectionTag);
+const collectionTitles = {};
+function addCollectionTitles(collectionTag, belongsTo = "") {
+  const collectionTitleKeys = Object.keys(collectionTitles);
+  if (!collectionTitleKeys.includes(collectionTag)) {
+    collectionTitles[collectionTag] = {
+      displayName: collectionTag,
+      belongsTo: belongsTo
+    }
   }
 }
 
@@ -78,7 +82,7 @@ function addToDecadesCollection(discogsResult, collectionTags) {
     year = parseInt((discogsResult.year).substr(0, 3), 10);
     yearTag = `${year}0s`; 
     collectionTags.push(yearTag);
-    addCollectionTitles(yearTag); 
+    addCollectionTitles(yearTag, "decades"); 
   }
 }
 
