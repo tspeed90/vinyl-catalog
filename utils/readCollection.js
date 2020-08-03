@@ -2,7 +2,15 @@ const fs = require("fs");
 const parse = require("csv-parse/lib/sync");
 const fetch = require("node-fetch");
 
-fs.readFile("./testCollection.csv", "UTF-8", (err, data) => {
+var Bottleneck = require("bottleneck/es5");
+const limiter = new Bottleneck({
+  reservoir: 57,
+  reservoirRefreshAmount: 57,
+  reservoirRefreshInterval: 65*1000,
+  maxConcurrent: 3,
+});
+
+fs.readFile("./vinyl_collection.csv", "UTF-8", (err, data) => {
   if (err) {
     throw err;
   } else {
@@ -96,8 +104,8 @@ async function convertToJson(collection) {
   async function requestDiscogsInfo(row) {
     let discogsAlbum;
     if (row.catalogueNo !== "") {
-      const discogsResults = await fetch(
-        `https://api.discogs.com/database/search?catno=${row.catalogueNo}&key=PLEnZqSdtLmdphzMJZzO&secret=FgpWuGTjmNrhIrqNOnhBDEWMZYVmfOwz`
+      const discogsResults = await limiter.schedule(() =>
+        fetch(`https://api.discogs.com/database/search?catno=${row.catalogueNo}&key=PLEnZqSdtLmdphzMJZzO&secret=FgpWuGTjmNrhIrqNOnhBDEWMZYVmfOwz`)
       );
       discogsAlbum = selectBestDiscogsMatch((await discogsResults.json()).results, row.catalogueNo);
       if (discogsAlbum == undefined) {
