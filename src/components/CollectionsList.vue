@@ -1,7 +1,9 @@
 <template>
   <div class="collections-list-container" v-if="Object.keys(catalogData.collectionTitles).length > 0">
     <router-link to="/collections" v-bind:key="all-albums" class="collections-buttons">all albums</router-link>
-    <router-link :to="{name: 'Collections List', params: { collection: title } }"  v-for="title in Object.keys(catalogData.collectionTitles)" v-bind:key="title" class="collections-buttons">{{title}}</router-link>
+    <div v-for="set in this.collectionSets" v-bind:key="set">
+      <router-link :to="{name: 'Collections List', params: { collection: title.displayName } }" v-for="title in set" v-bind:key="title" class="collections-buttons">{{title.displayName}}</router-link>
+    </div>
   </div>
 </template>
 
@@ -11,7 +13,21 @@ import {Component, Prop, Vue} from 'vue-property-decorator';
 @Component
 export default class CollectionsList extends Vue {
   @Prop() private catalogData;
+
+  private get collectionSets() {
+    const collectionTitles = Object.values(this.catalogData.collectionTitles);
+    const sets = {};
+    collectionTitles.forEach(title => {
+      if (sets[title.belongsTo] == undefined) {
+        sets[title.belongsTo] = []
+      }
+      sets[title.belongsTo].push(title);
+    })
+    return sets;
+  }
+
 }
+
 </script>
 
 <style lang="scss">
