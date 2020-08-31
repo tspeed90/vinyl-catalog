@@ -13,8 +13,9 @@
     </div>
     <ul class="album-details">
       <li class="artist-name">{{ record.artist }}</li>
-      <li>Release: {{ record.copies[0].catalogueNo }}</li>
+      <li>Release: {{ record.copies[0].catalogueNo == null ? 'Unknown' : record.copies[0].catalogueNo }}</li>
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
+      <li>{{ capitalize(record.copies[0].location) }}</li>
     </ul>
     <span class="thumb-rating-container">
       <button class="thumbs-button" v-bind:class="{ active: hasThumbsUp }" v-on:click="onThumbsUp"><font-awesome-icon :icon="['fas', 'thumbs-up']" class="thumbs-icon" title="thumbs up" /></button>
@@ -68,6 +69,10 @@ export default class Album extends Vue {
 
   private get hasThumbsDown() {
     return this.record.collections && this.record.collections.includes('thumbs-down');
+  }
+
+  private capitalize(word) {
+    return word.substr(0,1).toUpperCase() + word.substr(1).toLowerCase();
   }
 
   onThumbsUp() {
