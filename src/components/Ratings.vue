@@ -1,6 +1,6 @@
 <template>
   <div class="ratings-container">
-    <span>{{type}} rating: {{condition.rating || "Unknown"}}</span>
+    <span :title="condition.notes">{{type}} rating: {{condition.rating || "Unknown"}}</span>
   </div>
 </template>
 
