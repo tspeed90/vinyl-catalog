@@ -13,7 +13,7 @@
     </div>
     <ul class="album-details">
       <li class="artist-name">{{ record.artist }}</li>
-      <li>Release: {{ record.copies[0].catalogueNo == null ? 'Unknown' : record.copies[0].catalogueNo }}</li>
+      <li>Release: {{ record.copies[0].catalogueNo || 'Unknown' }}</li>
       <li>{{ record.played == true ? "Played" : "Unplayed" }}</li>
       <li>{{ capitalize(record.copies[0].location) }}</li>
     </ul>
@@ -71,8 +71,12 @@ export default class Album extends Vue {
     return this.record.collections && this.record.collections.includes('thumbs-down');
   }
 
-  private capitalize(word) {
-    return word.substr(0,1).toUpperCase() + word.substr(1).toLowerCase();
+  private capitalize(word:string) {
+    if (word !== undefined) {
+      return word.substr(0,1).toUpperCase() + word.substr(1).toLowerCase();
+    } else {
+      return "";
+    }
   }
 
   onThumbsUp() {
