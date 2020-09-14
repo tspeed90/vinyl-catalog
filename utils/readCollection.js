@@ -1,13 +1,13 @@
 const fs = require("fs");
 const parse = require("csv-parse/lib/sync");
-const fetch = require("node-fetch");
+const fetch = require('node-fetch');
 
 var Bottleneck = require("bottleneck/es5");
 const limiter = new Bottleneck({
-  reservoir: 57,
-  reservoirRefreshAmount: 57,
-  reservoirRefreshInterval: 65*1000,
-  maxConcurrent: 3,
+  reservoir: 35,
+  reservoirRefreshAmount: 35,
+  reservoirRefreshInterval: 75*1000,
+  maxConcurrent: 2
 });
 
 fs.readFile("./vinyl_collection.csv", "UTF-8", (err, data) => {
@@ -17,6 +17,10 @@ fs.readFile("./vinyl_collection.csv", "UTF-8", (err, data) => {
     convertToJson(data);
   }
 });
+
+function generateRecordId() {
+  return Math.floor(Math.random() * Math.floor(1000000000)) + "";
+}
 
 function emptyToNull(column) {
   if (column == "") {
@@ -35,15 +39,13 @@ function convertToBoolean(column) {
   }
 }
 
-function generateRecordId() {
-  return Math.floor(Math.random() * Math.floor(1000000000)) + "";
-}
-
 function normalizeCatalogueNumber(catNo) {
   const regex = /(\s|-)/gi;
   return catNo.replace(regex, "");
 }
 
+
+// BEST MATCH
 function selectBestDiscogsMatch(discogsResults, csvCat) {
   const normalizedCsvCat = normalizeCatalogueNumber(csvCat);
   const validDiscogsResults = discogsResults.filter(result => {
@@ -57,7 +59,6 @@ function selectBestDiscogsMatch(discogsResults, csvCat) {
   );
 }
 
-// TODO: rewrite to avoid global variable :(
 const collectionTitles = {};
 function addCollectionTitles(collectionTag, belongsTo = "") {
   const collectionTitleKeys = Object.keys(collectionTitles);
@@ -103,10 +104,12 @@ async function convertToJson(collection) {
   // TODO: move this function out of convertToJson and call here
   async function requestDiscogsInfo(row) {
     let discogsAlbum;
+   
+
     if (row.catalogueNo !== "") {
       const discogsResults = await limiter.schedule(() =>
         fetch(`https://api.discogs.com/database/search?catno=${row.catalogueNo}&key=PLEnZqSdtLmdphzMJZzO&secret=FgpWuGTjmNrhIrqNOnhBDEWMZYVmfOwz`)
-      );
+        );
       discogsAlbum = selectBestDiscogsMatch((await discogsResults.json()).results, row.catalogueNo);
       if (discogsAlbum == undefined) {
         discogsAlbum = {};
