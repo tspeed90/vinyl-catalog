@@ -1,8 +1,17 @@
+export interface CatalogData {
+  collectionTitles: {
+    [key:string]: Collection;
+  };
+  albums: Album
+}
+
+
 export interface Album {
   artist: string;
   album: string;
   played: boolean;
   copies: Copy[];
+  collections: string[];
 }
 
 export interface Copy {
@@ -21,4 +30,9 @@ export interface Copy {
 export interface Condition {
   rating: string;
   notes: string;
+}
+
+export interface Collection {
+  displayName: string;
+  belongsTo: string;
 }
