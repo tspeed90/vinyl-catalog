@@ -96,7 +96,7 @@ export default class Album extends Vue {
     }
   }
 
-  addCollectionToRecord(title) {
+  addCollectionToRecord(title: string) {
     let updates = this.record.collections || [];
     if (!updates.includes(title)) {
       updates.push(title);
@@ -105,13 +105,13 @@ export default class Album extends Vue {
     }
   }
 
-  removeCollectionFromRecord(title) {
+  removeCollectionFromRecord(title: string) {
     let updates = [...this.record.collections];
     updates.splice(this.record.collections.indexOf('title'), 1);
     database.ref('/albums/' + this.$route.params.id + '/collections').set(updates);
   }
 
-  updateCollectionTitles(title) {
+  updateCollectionTitles(title: string) {
     database.ref('/collectionTitles').once('value').then(function(snapshot) {
       const existingCollectionTitles = snapshot.val();
       if (!existingCollectionTitles.includes(title)) {

@@ -1,6 +1,6 @@
 <template>
   <div class="collections-list-container" v-if="Object.keys(catalogData.collectionTitles).length > 0">
-    <router-link to="/collections" v-bind:key="all-albums" class="collections-buttons">all albums</router-link>
+    <router-link to="/" v-bind:key="all-albums" class="collections-buttons">all albums</router-link>
     <div v-for="(set, belongsTo) in this.collectionSets" v-bind:key="set">
       <button v-on:click="setExpandedState(belongsTo)" class="decades-collapse-btn" v-if="belongsTo !== ''">{{belongsTo}}<span class="expand-symbol">+</span></button>
       <div v-if="isSetExpanded(belongsTo)">
@@ -12,14 +12,22 @@
 
 <script lang="ts">
 import {Component, Prop, Vue} from 'vue-property-decorator';
+import { CatalogData, Collection } from "@/records";
+
+
 
 @Component
 export default class CollectionsList extends Vue {
-  @Prop() private catalogData;
+  @Prop() private catalogData!: CatalogData;
+  
+  collectionsState: {[key:string]:boolean} = {};
 
   private get collectionSets() {
     const collectionTitles = Object.values(this.catalogData.collectionTitles);
-    const sets = {};
+    type Sets = {
+      [key:string]: Collection[]
+    }
+    const sets = <Sets>{};
     collectionTitles.forEach(title => {
       if (sets[title.belongsTo] == undefined) {
         sets[title.belongsTo] = []
@@ -31,7 +39,6 @@ export default class CollectionsList extends Vue {
   
   constructor() {
     super();
-    this.collectionsState = {};
     const collectionTitles = Object.values(this.catalogData.collectionTitles);
       collectionTitles.forEach(title => {
         if (title.belongsTo !== undefined) {

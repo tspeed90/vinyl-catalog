@@ -17,12 +17,13 @@ import 'firebase/database';
 const database = firebase.database();
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faRecordVinyl } from "@fortawesome/free-solid-svg-icons";
+import {Album, Collection} from '@/records';
 
 library.add(faRecordVinyl);
 
 let catalogData = Vue.observable({
-  collectionTitles: {},
-  albums: {}
+  collectionTitles: <Collection>{},
+  albums: <Album>{}
 })
 
 @Component({
